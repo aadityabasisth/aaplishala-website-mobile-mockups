@@ -39,7 +39,7 @@ export function Hero() {
             AapliShala simplifies school management with digital attendance, timetables, and instant parent-teacher updates. Ideal for boosting efficiency, transparency, and communication in education.
           </motion.p>
           <div className="flex justify-center mb-16">
-            <a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer" title="Download from Play Store">
+            <a href="https://play.google.com/store/apps/details?id=com.aaplishala&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" title="Download from Play Store">
               <motion.img
                 src="/googleplay-dark.png"
                 alt="Download from Play Store"

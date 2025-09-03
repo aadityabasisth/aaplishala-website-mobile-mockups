@@ -8,7 +8,7 @@ import { Features } from "@/components/sections/features";
 import { Footer } from "@/components/sections/footer";
 import { Header } from "@/components/sections/header";
 import { Hero } from "@/components/sections/hero";
-import { Pricing } from "@/components/sections/pricing";
+// import { Pricing } from "@/components/sections/pricing";
 import { Testimonials } from "@/components/sections/testimonials";
 
 export default function Home() {
@@ -21,10 +21,9 @@ export default function Home() {
       <BentoGrid />
       <Benefits />
       <Features />
-      <Testimonials />
-      <Pricing />
+      {/* <Testimonials /> */}  
+  {/* <Pricing /> removed */}
       <FAQ />
-      <CTA />
       <Footer />
     </main>
   );
