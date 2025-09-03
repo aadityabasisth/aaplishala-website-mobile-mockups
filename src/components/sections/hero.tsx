@@ -46,7 +46,7 @@ export function Hero() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, delay: 1 }}
-                className="w-40 flex-shrink-0 block"
+                className="w-48 h-auto flex-shrink-0 block"
               />
             </a>
           </div>
