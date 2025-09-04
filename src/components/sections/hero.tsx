@@ -18,7 +18,7 @@ export function Hero() {
 
   return (
     <Section id="hero" className="min-h-[100vh] w-full overflow-hidden">
-      <main className="mx-auto pt-16 sm:pt-24 md:pt-32 text-center relative px-4">
+  <main className="mx-auto pt-8 sm:pt-12 md:pt-16 text-center relative px-4">
         <div className="relative">
           <motion.div
             initial={{ y: -20, opacity: 0 }}

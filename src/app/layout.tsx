@@ -8,7 +8,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = constructMetadata({
-  title: `${siteConfig.name} | ${siteConfig.description}`,
+  title: "AapliShala - School Management App",
 });
 
 export const viewport: Viewport = {
@@ -25,6 +25,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+      </head>
       <body
         className={cn(
           "min-h-screen bg-background antialiased w-full mx-auto scroll-smooth",
@@ -32,7 +35,7 @@ export default function RootLayout({
         )}
       >
         {children}
-  {/* <TailwindIndicator /> removed */}
+        {/* <TailwindIndicator /> removed */}
       </body>
     </html>
   );
