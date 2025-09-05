@@ -8,7 +8,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = constructMetadata({
-  title: "AapliShala - School Management App",
+  title: "AapliShala",
 });
 
 export const viewport: Viewport = {
@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="/rena-logo.png" type="image/svg+xml" />
       </head>
       <body
         className={cn(

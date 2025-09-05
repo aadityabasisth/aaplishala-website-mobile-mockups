@@ -71,7 +71,9 @@ export function Header() {
             </Link>
             <div className="hidden lg:block">
               <Link
-                href="#"
+                href="https://calendly.com/renasofttech/30min"
+                target="_blank"
+                rel="noopener noreferrer"
                 className={cn(
                   buttonVariants({ variant: "default" }),
                   "h-8 text-white rounded-full group bg-orange-500 border-orange-500 hover:bg-orange-600 hover:border-orange-600"
