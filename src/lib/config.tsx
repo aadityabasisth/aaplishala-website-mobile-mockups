@@ -59,85 +59,88 @@ export const siteConfig = {
       icon: <BellIcon className="h-6 w-6" />,
     },
   ],
+
   featureHighlight: [
     {
       title: "Digital Attendance",
       description:
         "Teachers can take attendance quickly, and parents get instant updates.",
-      imageSrc: "/Device-2.png",
+      imageSrc: "/teacher-attendance-history.png",
       direction: "rtl" as const,
     },
     {
       title: "Class Scheduling",
-      description:
-        "Automatically generate and manage timetables with ease.",
-      imageSrc: "/Device-3.png",
+      description: "Automatically generate and manage timetables with ease.",
+      imageSrc: "/student-timetable.png",
       direction: "ltr" as const,
     },
     {
       title: "Assignments & Reports",
       description:
         "Create, share, and grade assignments — with reports auto-generated.",
-      imageSrc: "/Device-4.png",
+      imageSrc: "/teacher-homework-view.png",
       direction: "rtl" as const,
     },
   ],
+
   bento: [
     {
       title: "Smart Schooling",
       content:
         "AapliShala brings attendance, assignments, and parent-teacher communication into one platform.",
-      imageSrc: "/Device-1.png",
-      imageAlt: "School dashboard illustration",
+      imageSrc: "/teacher-before-login.png",
+      imageAlt: "Teacher login screen",
       fullWidth: true,
     },
     {
       title: "Digital Attendance",
       content:
         "Teachers mark attendance in seconds, and parents receive real-time updates.",
-      imageSrc: "/Device-2.png",
-      imageAlt: "Attendance illustration",
+      imageSrc: "/teacher-student-leave-view.png",
+      imageAlt: "Student leave management",
       fullWidth: false,
     },
     {
       title: "Assignments & Reports",
       content:
         "Distribute assignments digitally and generate detailed student reports instantly.",
-      imageSrc: "/Device-3.png",
-      imageAlt: "Assignments illustration",
+      imageSrc: "/student-assignment.png",
+      imageAlt: "Assignment submission",
       fullWidth: false,
     },
     {
       title: "Parent Communication",
       content:
         "Send announcements, updates, and progress reports directly to parents.",
-      imageSrc: "/Device-4.png",
-      imageAlt: "Parent communication illustration",
+      imageSrc: "/student-announcement.png",
+      imageAlt: "Announcements screen",
       fullWidth: true,
     },
   ],
+
   benefits: [
     {
       id: 1,
       text: "Save hours each week with automated attendance and grading.",
-      image: "/Device-6.png",
+      image: "/teacher-leave-history.png",
     },
     {
       id: 2,
       text: "Improve parent-teacher communication effortlessly.",
-      image: "/Device-7.png",
+      image: "/student-pocso.png",
     },
     {
       id: 3,
       text: "Streamline timetable and class scheduling.",
-      image: "/Device-8.png",
+      image: "/teacher-schedule.png",
     },
     {
       id: 4,
       text: "Boost student performance with smart insights.",
-      image: "/Device-1.png",
+      image: "/teacher-profiel.png",
     },
   ],
+
   pricing: [
     {
       name: "Basic",
@@ -173,33 +176,35 @@ export const siteConfig = {
       isPopular: true,
     },
   ],
+
   faqs: [
-  {
-    question: "Who can use AapliShala?",
-    answer:
-      "Students, teachers, parents, and administrators. Admins manage the system, while others get role-based access.",
-  },
-  {
-    question: "Does it track attendance for staff and students?",
-    answer:
-      "Yes, attendance can be managed for both staff and students in real time.",
-  },
-  {
-    question: "Can the system generate reports?",
-    answer:
-      "Reports are auto-generated for attendance, performance, and assignments.",
-  },
-  {
-    question: "Does it provide analytics?",
-    answer:
-      "Yes, smart analytics highlight trends in student performance and attendance.",
-  },
-  {
-    question: "Is timetable management included?",
-    answer:
-      "Yes, schools can create, share, and update timetables digitally.",
-  },
-],
+    {
+      question: "Who can use AapliShala?",
+      answer:
+        "Students, teachers, parents, and administrators. Admins manage the system, while others get role-based access.",
+    },
+    {
+      question: "Does it track attendance for staff and students?",
+      answer:
+        "Yes, attendance can be managed for both staff and students in real time.",
+    },
+    {
+      question: "Can the system generate reports?",
+      answer:
+        "Reports are auto-generated for attendance, performance, and assignments.",
+    },
+    {
+      question: "Does it provide analytics?",
+      answer:
+        "Yes, smart analytics highlight trends in student performance and attendance.",
+    },
+    {
+      question: "Is timetable management included?",
+      answer:
+        "Yes, schools can create, share, and update timetables digitally.",
+    },
+  ],
+
   footer: [
     {
       id: 1,
@@ -212,6 +217,7 @@ export const siteConfig = {
       ],
     },
   ],
+
   testimonials: [
     {
       id: 1,

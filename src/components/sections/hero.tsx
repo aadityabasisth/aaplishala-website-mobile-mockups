@@ -1,9 +1,7 @@
 "use client";
 
-import { Icons } from "@/components/icons";
 import { Section } from "@/components/section";
 import { easeInOutCubic } from "@/lib/animation";
-import { siteConfig } from "@/lib/config";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 export function Hero() {
@@ -18,7 +16,7 @@ export function Hero() {
 
   return (
     <Section id="hero" className="min-h-[100vh] w-full overflow-hidden">
-  <main className="mx-auto pt-8 sm:pt-12 md:pt-16 text-center relative px-4">
+      <main className="mx-auto pt-8 sm:pt-12 md:pt-16 text-center relative px-4">
         <div className="relative">
           <motion.div
             initial={{ y: -20, opacity: 0 }}
@@ -39,7 +37,12 @@ export function Hero() {
             AapliShala simplifies school management with digital attendance, timetables, and instant parent-teacher updates. Ideal for boosting efficiency, transparency, and communication in education.
           </motion.p>
           <div className="flex justify-center mb-16">
-            <a href="https://play.google.com/store/apps/details?id=com.aaplishala&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" title="Download from Play Store">
+            <a
+              href="https://play.google.com/store/apps/details?id=com.aaplishala&pcampaignid=web_share"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Download from Play Store"
+            >
               <motion.img
                 src="/googleplay-dark.png"
                 alt="Download from Play Store"
@@ -53,8 +56,8 @@ export function Hero() {
         </div>
         <div className="flex flex-nowrap items-center justify-center gap-4 sm:gap-8 h-auto sm:h-[500px] select-none">
           <motion.img
-            src="/Device-1.png"
-            alt="iPhone"
+            src="/student-profile.png"
+            alt="Student Profile"
             initial={{ opacity: 0, x: -200 }}
             animate={{ opacity: 1, x: 0 }}
             style={{ y: y1 }}
@@ -62,8 +65,8 @@ export function Hero() {
             className="w-40 sm:w-64 h-[333px] sm:h-[500px] flex-shrink-0"
           />
           <motion.img
-            src="/Device-2.png"
-            alt="iPhone"
+            src="/student-timetable.png"
+            alt="Student Timetable"
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             style={{ y: y2 }}
@@ -71,8 +74,8 @@ export function Hero() {
             className="w-40 sm:w-64 h-[333px] sm:h-[500px] flex-shrink-0"
           />
           <motion.img
-            src="/Device-3.png"
-            alt="iPhone"
+            src="/teacher-after-login.png"
+            alt="Teacher Dashboard"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             style={{ y: y3 }}
@@ -80,8 +83,8 @@ export function Hero() {
             className="w-40 sm:w-64 h-[333px] sm:h-[500px] flex-shrink-0"
           />
           <motion.img
-            src="/Device-4.png"
-            alt="iPhone"
+            src="/teacher-attendance-class.png"
+            alt="Teacher Taking Attendance"
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
             style={{ y: y4 }}
@@ -89,8 +92,8 @@ export function Hero() {
             className="w-40 sm:w-64 h-[333px] sm:h-[500px] flex-shrink-0"
           />
           <motion.img
-            src="/Device-5.png"
-            alt="iPhone"
+            src="/student-assignment.png"
+            alt="Student Assignment"
             initial={{ opacity: 0, x: 200 }}
             animate={{ opacity: 1, x: 0 }}
             style={{ y: y5 }}
