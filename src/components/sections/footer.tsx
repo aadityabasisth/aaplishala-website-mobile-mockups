@@ -1,21 +1,6 @@
 import Image from "next/image";
 import { siteConfig } from "@/lib/config";
-import {
-  InstagramLogoIcon,
-  LinkedInLogoIcon,
-  TwitterLogoIcon,
-} from "@radix-ui/react-icons";
 
-interface Icon {
-  icon: JSX.Element;
-  url: string;
-}
-
-const icons: Icon[] = [
-  { icon: <LinkedInLogoIcon />, url: "#" },
-  { icon: <InstagramLogoIcon />, url: "#" },
-  { icon: <TwitterLogoIcon />, url: "#" },
-];
 
 export function Footer() {
   return (
@@ -50,17 +35,14 @@ export function Footer() {
           <p>© {new Date().getFullYear()} {siteConfig.name}. All rights reserved.</p>
         </div>
 
-        {/* Right: Social Icons */}
-        <div className="flex gap-x-3">
-          {icons.map((icon, index) => (
-            <a
-              key={index}
-              href={icon.url}
-              className="flex h-6 w-6 items-center justify-center text-muted-foreground transition-all duration-100 ease-linear hover:text-foreground"
-            >
-              {icon.icon}
-            </a>
-          ))}
+        {/* Right: Support Email */}
+        <div className="flex items-center">
+          <a
+            href="mailto:info@aaplishala.com"
+            className="text-[15px] font-medium text-muted-foreground transition-all duration-100 ease-linear hover:text-foreground hover:underline hover:underline-offset-4"
+          >
+            info@aaplishala.com
+          </a>
         </div>
       </div>
     </footer>
