@@ -1,14 +1,12 @@
 import { MetadataRoute } from "next";
-import { headers } from "next/headers";
+import { siteConfig } from "@/lib/config";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const headersList = headers();
-  let domain = headersList.get("host") as string;
-  let protocol = "https";
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || siteConfig.url;
 
   return [
     {
-      url: `${protocol}://${domain}`,
+      url: baseUrl,
       lastModified: new Date(),
     },
   ];

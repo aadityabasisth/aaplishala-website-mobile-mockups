@@ -1,8 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  images: {
-    remotePatterns: [{ hostname: "localhost" }, { hostname: "randomuser.me" }],
+  output: "export",
+  images: { 
+    unoptimized: true,
+    remotePatterns: [{ hostname: "localhost" }, { hostname: "randomuser.me" }]
   },
+  trailingSlash: true
 };
 
 export default nextConfig;
