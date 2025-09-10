@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-  <link rel="icon" href="/rena-logo.png" type="image/svg+xml" />
+  <link rel="icon" href="/rena-logo.png" type="image/png" />
       </head>
       <body
         className={cn(
